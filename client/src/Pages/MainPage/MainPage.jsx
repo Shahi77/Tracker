@@ -1,4 +1,9 @@
 import React from "react";
-
-const MainPage = () => {};
-export default MainPage;
+import Navbar from "../../Components/Navbar/Navbar";
+export default function MainPage() {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+}
