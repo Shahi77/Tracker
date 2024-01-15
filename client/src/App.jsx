@@ -1,4 +1,3 @@
-import "./App.css";
 import MainPage from "./Pages/MainPage/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {

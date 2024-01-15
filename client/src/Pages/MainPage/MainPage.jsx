@@ -1,30 +1,15 @@
-import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
-import styled from "styled-components";
 
-const MainPageContainer = styled.div`
-  text-align: center;
-  margin-top: 20px;
-`;
-
-const SimplerSignIn = styled.h1`
-  font-size: 2em;
-`;
-
-const SaferPasswords = styled.span`
-  font-weight: bold;
-  font-size: 3em;
-  margin-left: 10px; /* Increased margin for better visibility */
-`;
-
-export default function MainPage() {
+const MainPage = () => {
   return (
     <>
       <Navbar />
-      <MainPageContainer>
-        <SimplerSignIn>Simpler sign-in,</SimplerSignIn>{" "}
-        <SaferPasswords>safer passwords</SaferPasswords>
-      </MainPageContainer>
+      <div className="mt-5 text-center">
+        <h2 className="font-semibold text-[2em]">Simpler sign-in</h2>
+        <h1 className="font-bold text-[3em] ml-3">safer passwords</h1>
+      </div>
     </>
   );
-}
+};
+
+export default MainPage;
